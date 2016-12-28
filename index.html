@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
+	<title>PosNeg</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 caja">
+				<h1 class="text-center titulo">PosNeg</h1>
+				<div class="row">
+				    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="numero_a">Ingresa un número "a"</label>
+                            <input type="text" class="form-control" id="numero_a" placeholder="0">
+                        </div>    
+				    </div>
+				    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="numero_b">Ingresa un número "b" </label>
+                            <input type="text" class="form-control" id="numero_b" placeholder="0">
+                        </div>    
+				    </div>
+				</div>
+				<div class="row">
+				    <div class="col-md-8 col-md-offset-2">
+				        <label for="neg">¿El parámetro "negativo" es verdadero?</label>
+                        <select class="form-control" id="neg">
+                            <option value="1" >Sí</option>
+                            <option value="2">No</option>
+                        </select>
+				    </div>
+				</div>
+				<br>
+                <button onclick="calcular()" class="btn btn-info btn-block" style="color:#fff;font-size:20px;">Analizar</button>
+                    <h4 class="text-center text-info">Resultado:</h4>
+                    <div id="salida" style="font-size:25px; color:#d808c8;" class="text-center">-</div>
+                    <div id="salida2" style="font-size:25px;  color:#F5437F;" class="text-center"></div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>
+                        El resultado es 1 cuando :
+                        </h5>
+                        <ul class="list-unstyled">
+                            <li> * Un número es negativo y el otro positivo.</li>
+                            <li> * Cuando el parámetro "negativo" es verdadero y ambos números son negativos.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <h5>
+                        El resultado es 0 en todos los demás casos.
+                        </h5> 
+                        <br>
+                        <a href="https://github.com/mariangelauribe/ejercicio7-posneg" target="_blank">Click para ver mi GitHub</a>  
+                    </div>
+                </div>      
+            </div>
+        </div>
+	</div>
+</body>
+<script src="main.js"></script>
+</html>

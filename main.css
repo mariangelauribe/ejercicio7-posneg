@@ -1,0 +1,11 @@
+body {
+    background: url(tribales.jpg) center center;
+}
+.titulo {
+    color:#d808c8;
+    font-weight: bold;
+}
+.caja {
+     background: rgba(255,250,240,0.8);
+    padding: 2%;
+}
